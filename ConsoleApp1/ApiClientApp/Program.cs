@@ -150,12 +150,12 @@ namespace ApiClientApp
                 string url = $"{apiUrl}/metadata/{id}";
 
                 // Define the payload for the PATCH request.
-                // This example adppends extended metadata for a Converation to include "chartspanMetaV4" field and hardcoded value.
+                // This example adppends extended metadata for a Converation to include "MetaPropertyX" field and hardcoded value.
                 var patchPayload = new
                 {
                     extendedMetadata = new Dictionary<string, string>
                     {
-                        { "chartspanMetaV4", "chartspan" }
+                        { "MetaPropertyX", "valueY" }
                     },
                 };
 
